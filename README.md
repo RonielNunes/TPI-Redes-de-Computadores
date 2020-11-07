@@ -7,7 +7,9 @@ controle de acesso ao meio em uma rede local com N estações compartilhando um 
 difusão:
 
 -> cenário 1: Slotted ALOHA
+
 -> cenário 2: CSMA p-persistente, com p = 1%
+
 -> cenário 3: algoritmo de recuo binário exponencial
 
 Para cada cenário, você deverá encontrar:
