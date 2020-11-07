@@ -1,4 +1,4 @@
-# TpRedesI
+# Tabalho prático I Redes de Computadores
 Alunos: Roniel Nunes e Tais Santos
 
 
