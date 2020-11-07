@@ -1,4 +1,6 @@
 # TpRedesI
+Alunos: Roniel Nunes e Tais Santos
+
 
 O trabalho baseou-se na implementação de três cenários de simulação, cada um deles considerando um algoritmo diferente para o
 controle de acesso ao meio em uma rede local com N estações compartilhando um mesmo meio de
