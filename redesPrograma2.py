@@ -119,7 +119,7 @@ def backoff(N): #limite de tentativas
     estacoes = N
     slots = 100
     vetorResultado = []
-    while(estacoes > 0 or i < 16):
+    while(estacoes > 0 and i < 16):
         vetorSlots = []
 
         for i in range(estacoes):
@@ -152,10 +152,8 @@ def backoff(N): #limite de tentativas
                     timeEnvioTotalMedio +=vetorSlots[i]   #guarda o tempo das estações que eviamos
 
                 estacoes -= (len(vetorSlots) - len(vetorPosica))
-                print('valor estacao:')
                 slots = (2**i) - 1
                 i +=1
-                print('valor i:',i )
 
     if (i == 16):
         print("tempo maximo atigindo")
@@ -168,7 +166,7 @@ def backoff(N): #limite de tentativas
 
 
 if __name__ == '__main__':
-    N = 10 #Numero de estamos que vamo tentar transmitir
+    N = 20 #Numero de estamos que vamo tentar transmitir
     print("Numero de estacoes(N):",N)
 
 
