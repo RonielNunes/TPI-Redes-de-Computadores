@@ -157,7 +157,9 @@ def backoff(N): #limite de tentativas
 
     if (i == 16):
         print("tempo maximo atigindo")
-        return 0
+        vetorResultado.append(0)
+        vetorResultado.append(0)
+        return  vetorResultado
     else:
         vetorResultado.append(timePrimeiroEnvio*51.2)
         vetorResultado.append(timeEnvioTotalMedio*51.2)
@@ -168,7 +170,6 @@ def backoff(N): #limite de tentativas
 if __name__ == '__main__':
     N = 20 #Numero de estamos que vamo tentar transmitir
     print("Numero de estacoes(N):",N)
-
 
     vetorAlohaPrimeiro = []
     vetorAlohaTotal = []
