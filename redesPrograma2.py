@@ -169,7 +169,7 @@ def backoff(N): #limite de tentativas
 
 
 if __name__ == '__main__':
-    N = 20 #Numero de estamos que vamo tentar transmitir
+    N = 100 #Numero de estamos que vamo tentar transmitir
     print("Numero de estacoes(N):",N)
 
     vetorAlohaPrimeiro = []
@@ -195,15 +195,20 @@ if __name__ == '__main__':
         vetorBackoffTotal.append(vetorBackoffResultado[1])
 
 
-    print("ALOHA")
-    print(statistics.mean(vetorAlohaPrimeiro))
-    print(statistics.mean(vetorAlohaTotal))
+    print("**************************ALOHA**************************")
+    print('Tempo do primeiro envio: ',statistics.mean(vetorAlohaPrimeiro))
+    print('Desvio padrao do tempo do primeiro envio: ',statistics.pstdev(vetorAlohaPrimeiro))
+    print('Tempo envio medio Total: ',statistics.mean(vetorAlohaTotal))
+    print('Desvio padrao do tempo de envio medio Total: ',statistics.pstdev(vetorAlohaTotal))
 
+    print("**************************CSMA**************************")
+    print('Tempo do primeiro envio: ',statistics.mean(vetorCsmaPrimeiro))
+    print('Desvio padrao do tempo do primeiro envio: ',statistics.pstdev(vetorCsmaPrimeiro))
+    print('Tempo envio medio Total: ',statistics.mean(vetorCsmaTotal))
+    print('Desvio padrao do tempo de envio medio Total: ',statistics.pstdev(vetorCsmaTotal))
 
-    print("CSMA")
-    print(statistics.mean(vetorCsmaPrimeiro))
-    print(statistics.mean(vetorCsmaTotal))
-
-    print("BACKOFF")
-    print(statistics.mean(vetorBackoffPrimeiro))
-    print(statistics.mean(vetorBackoffTotal))
+    print("**************************BACKOFF**************************")
+    print('Tempo do primeiro envio: ',statistics.mean(vetorBackoffPrimeiro))
+    print('Desvio padrao do tempo do primeiro envio: ',statistics.pstdev(vetorBackoffPrimeiro))
+    print('Tempo envio medio Total: ',statistics.mean(vetorBackoffTotal))
+    print('Desvio padrao do tempo de envio medio Total: ',statistics.pstdev(vetorBackoffTotal))
