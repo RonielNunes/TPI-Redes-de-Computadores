@@ -153,9 +153,9 @@ def backoff(N): #limite de tentativas
                         timePrimeiroEnvio = vetorSlots[0] #guarda o primeiro tempo da estação que enviou
                     timeEnvioTotalMedio +=vetorSlots[i]   #guarda o tempo das estações que eviamos
 
-                estacoes -= (len(vetorSlots) - len(vetorPosica))
-                slots = (2**i) - 1
-                i +=1
+            estacoes -= (len(vetorSlots) - len(vetorPosica))
+            slots = (2**i) - 1
+            i +=1
 
     if (i == 16):
         print("tempo maximo atigindo")
@@ -190,9 +190,13 @@ if __name__ == '__main__':
         vetorCsmaPrimeiro.append(vetorCsmaResultado[0])
         vetorCsmaTotal.append(vetorCsmaResultado[1])
 
+
         vetorBackoffResultado = backoff(N)
         vetorBackoffPrimeiro.append(vetorBackoffResultado[0])
         vetorBackoffTotal.append(vetorBackoffResultado[1])
+
+
+    
 
 
     print("**************************ALOHA**************************")
