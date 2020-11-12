@@ -60,7 +60,6 @@ def slottedAloha(N):
 
 
     vetorResultado = [timePrimeiroEnvio*51.2,timeEnvioTotalMedio*51.2]
-    print('aloha')
     return vetorResultado
 
 def csma(N):
@@ -71,10 +70,12 @@ def csma(N):
     timePrimeiroEnvio = 0
     vetorResultado = []
 
+
     while (totalElementos > 0):
         vetorSlots = []
         for i in range(totalElementos):
-            vetorSlots.append(random.randint(1,slots))
+            q = slots - (random.randint(1,slots))
+            vetorSlots.append(q)
         vetorSlots.sort()
         #print(vetorSlots)
         #verifica se o canal tá ocupado
@@ -103,13 +104,14 @@ def csma(N):
 
 
             totalElementos -= (len(vetorSlots) - len(vetorPosica))
+
+
             #passa que tem tempo diferente
 
     #print('valor:',totalElementos)
 
     vetorResultado.append(timePrimeiroEnvio*51.2)
     vetorResultado.append(timeEnvioTotalMedio*51.2)
-    print('csma')
     return vetorResultado
 
 def backoff(N): #limite de tentativas
@@ -163,7 +165,6 @@ def backoff(N): #limite de tentativas
     else:
         vetorResultado.append(timePrimeiroEnvio*51.2)
         vetorResultado.append(timeEnvioTotalMedio*51.2)
-        print('backoff')
         return  vetorResultado
 
 
@@ -181,7 +182,6 @@ if __name__ == '__main__':
     vetorBackoffTotal = []
 
     for i in range(33):
-        print(i)
         vetorAlohaResultado = slottedAloha(N)
         vetorAlohaPrimeiro.append(vetorAlohaResultado[0])
         vetorAlohaTotal.append(vetorAlohaResultado[1])
