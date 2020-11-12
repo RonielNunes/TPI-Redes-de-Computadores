@@ -1,4 +1,4 @@
-# Tabalho prático I Redes de Computadores
+# Trabalho prático I Redes de Computadores
 Alunos: Roniel Nunes e Tais Santos
 
 
