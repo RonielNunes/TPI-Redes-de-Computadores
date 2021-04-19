@@ -76,7 +76,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ✅ Contribuidores
  </h1>
  <table><tr>
- <td align="center"><a href="https://avatars.githubusercontent.com/u/39168931?v=4"><img style="border-radius: 50%;" src="https://github.com/taisbsantos" width="100px;" alt=""/><br /><sub><b>Tais Santos</b></sub></a><br /><a href="https://github.com/taisbsantos" title="DUpla Redes">🚀</a>
+ <td align="center"><a href="https://github.com/taisbsantos"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/39168931?v=4" width="100px;" alt=""/><br /><sub><b>Tais Santos</b></sub></a><br /><a href="https://github.com/taisbsantos" title="DUpla Redes">🚀</a>
  </td>
  
 </tr>
